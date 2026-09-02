@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portal escolar sobre os encontros entre as culturas erudita e popular em Belo Horizonte.">
+  <title>Entre Aspas e Esquinas — BH Erudita e Popular</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir para a página inicial"><span>Entre Aspas</span><i>e Esquinas</i></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span><span></span><b class="sr-only">Abrir menu</b></button>
+    <nav id="menu-principal" aria-label="Navegação principal">
+      <a href="#conceito">O conceito</a><a href="#trabalhos">Trabalhos</a><a href="#creditos">Créditos</a>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1" role="main">
+    <div id="inicio" class="home-view">
+      <section class="hero" aria-labelledby="titulo-principal">
+        <div class="hero-copy">
+          <p class="eyebrow">Português &amp; Literatura · Belo Horizonte</p>
+          <h1 id="titulo-principal">A cidade que se lê<br><em>em cada esquina.</em></h1>
+          <p class="lead">Um percurso pelos encontros entre a tradição erudita e a inventividade popular que dão voz, sabor e forma a Belo Horizonte.</p>
+          <blockquote>“Toda cidade é uma biblioteca aberta: há livros nas fachadas, versos nos mercados e histórias à mesa.”</blockquote>
+          <a class="button" href="#trabalhos">Explorar trabalhos <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="building b1"></div><div class="building b2"></div><div class="building b3"></div><p>BELO<br>HORIZONTE</p></div>
+      </section>
+
+      <section id="conceito" class="concept section" aria-labelledby="titulo-conceito">
+        <div class="section-label">01 · A premissa</div>
+        <div><h2 id="titulo-conceito">Quando o refinado encontra o cotidiano.</h2><p>Em Belo Horizonte, a cultura não vive em gavetas. O gesto preciso da cozinha de estufa conversa com a memória das receitas de família; a arquitetura moderna emoldura o som de quem toca na rua; e a palavra literária circula entre sebos, saraus e mesas de bar.</p><p>Este portal reúne cinco leituras desse encontro. Não para separar o que é “alto” do que é “popular”, mas para perceber como ambos se alimentam e reinventam a cidade.</p></div>
+      </section>
+
+      <section id="trabalhos" class="works section" aria-labelledby="titulo-trabalhos">
+        <div class="section-heading"><div><p class="eyebrow">02 · O acervo</p><h2 id="titulo-trabalhos">Cinco formas de atravessar BH</h2></div><p>Escolha um trabalho para abrir sua experiência.</p></div>
+        <div class="work-grid">
+          <article class="work-card magazine"><p>01 / editorial</p><h3>Revista<br><em>Digital</em></h3><span>Folheie a edição</span><a href="#revista" aria-label="Abrir trabalho Revista Digital"></a></article>
+          <article class="work-card exhibition"><div class="frame frame-a"></div><div class="frame frame-b"></div><p>02 / imagens</p><h3>Exposição<br><em>Virtual</em></h3><a href="#exposicao" aria-label="Abrir trabalho Exposição Virtual"></a></article>
+          <article class="work-card video"><div class="play" aria-hidden="true">▶</div><p>03 / documentário</p><h3>Vozes da<br><em>Rua</em></h3><a href="#video" aria-label="Abrir trabalho Vídeo Documentário"></a></article>
+          <article class="work-card podcast"><p>04 / escuta</p><div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><h3>Podcast<br><em>de esquina</em></h3><a href="#podcast" aria-label="Abrir trabalho Podcast"></a></article>
+          <article class="work-card interview"><p>05 / conversa</p><b>“</b><h3>Entrevista<br><em>em foco</em></h3><a href="#entrevista" aria-label="Abrir trabalho Entrevista"></a></article>
+        </div>
+      </section>
+    </div>
+
+    <section class="module" id="revista" data-module hidden aria-labelledby="revista-titulo"><a class="back" href="#inicio">← Voltar ao acervo</a><div class="module-intro"><p class="eyebrow">01 / editorial</p><h2 id="revista-titulo">Revista Digital</h2><p>Uma edição que aproxima o cuidado visual das publicações literárias das histórias que nascem nos bairros.</p></div><div class="reader"><div class="cover"><span>EDIÇÃO 01</span><h3>Entre<br><em>Aspas</em></h3><p>Comida, concreto e canção<br>em Belo Horizonte</p></div><div class="page"><p class="eyebrow">Índice</p><ol><li>O luxo discreto da estufa</li><li>Rimas que ocupam a praça</li><li>Modernismo à mineira</li><li>A palavra em circulação</li></ol><button class="button outline" type="button" data-toast="Em breve: revista completa em PDF.">Ler edição</button></div></div></section>
+
+    <section class="module" id="exposicao" data-module hidden aria-labelledby="exposicao-titulo"><a class="back" href="#inicio">← Voltar ao acervo</a><div class="module-intro"><p class="eyebrow">02 / imagens</p><h2 id="exposicao-titulo">Exposição Virtual</h2><p>Uma galeria de detalhes urbanos: lugares em que a memória e a criação cotidiana se encontram.</p></div><div class="gallery"><figure><div class="photo p1"></div><figcaption><b>01</b> Geometrias do centro</figcaption></figure><figure><div class="photo p2"></div><figcaption><b>02</b> A mesa como patrimônio</figcaption></figure><figure><div class="photo p3"></div><figcaption><b>03</b> Música em trânsito</figcaption></figure><figure><div class="photo p4"></div><figcaption><b>04</b> Letras no muro</figcaption></figure><figure><div class="photo p5"></div><figcaption><b>05</b> Sombra e concreto</figcaption></figure></div></section>
+
+    <section class="module" id="video" data-module hidden aria-labelledby="video-titulo"><a class="back" href="#inicio">← Voltar ao acervo</a><div class="module-intro"><p class="eyebrow">03 / documentário</p><h2 id="video-titulo">Vozes que habitam a rua</h2></div><div class="video-player"><video controls preload="metadata" aria-describedby="video-descricao"><source src="media/documentario-bh.mp4" type="video/mp4"><track kind="captions" srclang="pt-BR" label="Português" src="media/documentario-bh.vtt" default>Seu navegador não suporta vídeo HTML5.</video><p id="video-descricao">Documentário · 06:14 · adicione o vídeo e o arquivo de legendas à pasta <code>media</code>.</p></div><button class="text-toggle" type="button" aria-expanded="false" aria-controls="transcricao-video" data-disclosure>Mostrar transcrição do documentário</button><article class="media-transcript" id="transcricao-video" hidden aria-labelledby="titulo-transcricao-video"><h3 id="titulo-transcricao-video">Transcrição do documentário</h3><p><strong>Narradora:</strong> Belo Horizonte é feita de encontros. Entre o desenho modernista e a conversa na calçada, a cidade constrói sua própria linguagem.</p><p><strong>Voz da rua:</strong> A música chega primeiro. Ela chama, junta gente e transforma a passagem em permanência.</p><p><strong>Narradora:</strong> Nas cozinhas, nas praças e nas bibliotecas, a cultura ganha novas formas sem abandonar suas raízes.</p></article><div class="metadata"><p><b>Sinopse</b> Um olhar sobre os ritmos, trabalhos e afetos que tornam a rua também um palco cultural.</p><p><b>Ficha técnica</b> Direção e roteiro: equipe do projeto · 2026</p></div></section>
+
+    <section class="module" id="podcast" data-module hidden aria-labelledby="podcast-titulo"><a class="back" href="#inicio">← Voltar ao acervo</a><div class="module-intro"><p class="eyebrow">04 / escuta</p><h2 id="podcast-titulo">Frequência de esquina</h2><p>Conversas curtas sobre os sons, sabores e palavras que formam a paisagem belo-horizontina.</p></div><div class="podcast-player"><div class="disc" aria-hidden="true">EA</div><div><p class="eyebrow">Episódio em destaque</p><h3>A cidade servida à mesa</h3><p>08 min · com sons de cozinha e conversa</p><audio controls preload="metadata" aria-label="Podcast: A cidade servida à mesa"><source src="media/podcast-cidade-a-mesa.mp3" type="audio/mpeg">Seu navegador não suporta áudio HTML5.</audio></div></div><button class="text-toggle" type="button" aria-expanded="false" aria-controls="transcricao-podcast" data-disclosure>Mostrar transcrição do podcast</button><article class="media-transcript" id="transcricao-podcast" hidden aria-labelledby="titulo-transcricao-podcast"><h3 id="titulo-transcricao-podcast">Transcrição do podcast</h3><p><strong>Apresentadora:</strong> Hoje, a nossa conversa começa em uma estufa, onde o simples ganha cuidado, tempo e memória.</p><p><strong>Convidada:</strong> Cozinhar em Belo Horizonte é também contar histórias. Cada prato traz um jeito de receber e de pertencer.</p></article><ol class="episodes"><li><button type="button" data-toast="Episódio 1: adicione o arquivo de áudio correspondente."><span>01</span> Arquitetura para todos <small>07:21</small></button></li><li><button type="button" data-toast="Episódio 2: adicione o arquivo de áudio correspondente."><span>02</span> Rima, praça e resistência <small>09:04</small></button></li><li><button type="button" data-toast="Episódio 3 selecionado no player acima."><span>03</span> A cidade servida à mesa <small>08:00</small></button></li></ol></section>
+
+    <section class="module" id="entrevista" data-module hidden aria-labelledby="entrevista-titulo"><a class="back" href="#inicio">← Voltar ao acervo</a><div class="module-intro"><p class="eyebrow">05 / conversa</p><h2 id="entrevista-titulo">A cultura acontece no encontro</h2><p>Uma conversa sobre território, acesso e as várias formas de se produzir arte na cidade.</p></div><article class="transcript"><p class="speaker">ENTREVISTADORA</p><p class="question">Quando a cultura popular passa a ser reconhecida como patrimônio?</p><p class="speaker answer-label">ENTREVISTADA</p><p class="answer">Quando escutamos as pessoas que a sustentam todos os dias. O patrimônio não está somente no edifício preservado: também está no jeito de ocupar uma praça, de preparar uma receita e de contar uma história.</p><hr><p class="speaker">ENTREVISTADORA</p><p class="question">E onde entra a literatura?</p><p class="speaker answer-label">ENTREVISTADA</p><p class="answer">Ela entra em tudo. Está no livro, claro, mas também no ditado, na letra da canção e no causos que a cidade repete. Ler BH é aprender a ouvir essas vozes.</p></article></section>
+  </main>
+
+  <footer id="creditos"><p><b>Entre Aspas e Esquinas</b> · Trabalho de Português e Literatura</p><p>Equipe: <span>adicione os nomes</span> · Escola: <span>adicione a escola</span> · 2026</p><p class="accessibility-note">Desenvolvido com navegação por teclado, foco visível, transcrições e contraste ampliado.</p><a href="https://github.com/" target="_blank" rel="noreferrer">Ver repositório no GitHub <span aria-hidden="true">↗</span></a></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
