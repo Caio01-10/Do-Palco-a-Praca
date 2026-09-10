@@ -13,17 +13,19 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
     <!-- Cabeçalho -->
     <header class="site-header">
         <a class="brand" href="#inicio" aria-label="Ir para a página inicial"><span>Do palco</span><i>a praça</i></a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span><span></span><b class="sr-only">Abrir menu</b></button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span><span></span><span class="sr-only">Abrir menu</span></button>
         <nav id="menu-principal" aria-label="Navegação principal">
             <a href="#conceito">O conceito</a><a href="#trabalhos">Trabalhos</a><a href="#creditos">Créditos</a>
         </nav>
     </header>
 
     <!-- Título da página -->
-    <main id="conteudo" tabindex="-1" role="main">
+    <main id="conteudo" tabindex="-1">
         <div id="inicio" class="home-view">
             <section class="hero" aria-labelledby="titulo-principal">
                 <div class="hero-copy">
@@ -33,7 +35,9 @@
                     <blockquote>“O ponto de vista estudantil acerca da produção cultural na cidade.”</blockquote>
                     <a class="button" href="#trabalhos">Explorar trabalhos <span aria-hidden="true">↓</span></a>
                 </div>
-                <div class="hero-art" aria-hidden="true"><img class="" src="Orquestra-Sinfonica.jpg" alt="Orquetra sinfônica de Minas Gerais"></img><img class="" src="Duelo-de-MCs.jpg" alt="Duelo de MCs no Viaduto Santa Tereza"></img>
+                <div class="hero-art">
+                    <img src="Orquestra-Sinfonica.jpg" alt="Orquestra sinfônica de Minas Gerais">
+                    <img src="Duelo-de-MCs.jpg" alt="Duelo de MCs no Viaduto Santa Tereza">
                 </div>
             </section>
 
@@ -83,7 +87,7 @@
                         <a href="#podcast" aria-label="Abrir trabalho Podcast"></a>
                     </article>
                     <article class="work-card interview">
-                        <p>05 / conversa</p><b>“</b>
+                        <p>05 / conversa</p><b aria-hidden="true">“</b>
                         <h3>Entrevista<br><em>em foco</em></h3>
                         <a href="#entrevista" aria-label="Abrir trabalho Entrevista"></a>
                     </article>
@@ -119,12 +123,12 @@
                     </div>
 
                     <a class="button" href="pdf/revista.pdf" target="_blank" rel="noopener noreferrer">
-        Abrir PDF ↗
+        Abrir PDF <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span>
       </a>
                 </div>
 
                 <div class="revista-pdf">
-                    <iframe src="pdf/revista.pdf" title="Revista O Clube da Esquina" width="100%" height="900">
+                    <iframe src="pdf/revista.pdf" title="Revista O Clube da Esquina" width="100%">
         <p>
           Seu navegador não consegue visualizar o PDF.
           <a
@@ -244,7 +248,7 @@
     <footer id="creditos">
         <p><b>Do Palco a Praça</b> · Trabalho de Português</p>
         <p>Equipe: <span>Adrian da Silva Gomes; Bento Martins Tristão; Caio Henrique Macedo; Davi Campos Montijo; Pedro Mendes Santana; Perí Machado de Azevêdo.</span><br>Escola: <span>Colégio Técnico da UFMG (COLTEC)</span> · 2026</p>
-        <p class="accessibility-note">Desenvolvido com navegação por teclado, foco visível, transcrições e contraste ampliado.</p><a href="https://github.com/" target="_blank" rel="noreferrer">Ver repositório no GitHub <span aria-hidden="true">↗</span></a></footer>
+        <p class="accessibility-note">Desenvolvido com navegação por teclado, foco visível, transcrições e contraste ampliado.</p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver repositório no GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a></footer>
     <div class="toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
 </body>
