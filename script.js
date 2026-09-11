@@ -46,3 +46,15 @@ document.querySelectorAll('[data-disclosure]').forEach(button => button.addEvent
   const itemName = transcript.id === 'transcricao-video' ? 'do documentário' : 'do podcast';
   button.textContent = `${willOpen ? 'Ocultar' : 'Mostrar'} transcrição ${itemName}`;
 }));
+
+fetch("podcast/Coltecast_Transcricao.txt")
+    .then(resposta => resposta.text())
+    .then(texto => {
+        document.getElementById("transcricao-conteudo").innerText = texto;
+    })
+    .catch(erro => {
+        document.getElementById("transcricao-conteudo").innerText =
+            "Não foi possível carregar a transcrição.";
+        console.error(erro);
+    });
+const playerPodcast = document.getElementById("player-podcast");
