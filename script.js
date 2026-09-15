@@ -50,11 +50,21 @@ document.querySelectorAll('[data-disclosure]').forEach(button => button.addEvent
 fetch("podcast/Coltecast_Transcricao.txt")
     .then(resposta => resposta.text())
     .then(texto => {
-        document.getElementById("transcricao-conteudo").innerText = texto;
+        document.getElementById("transcricao-podcast-conteudo").innerText = texto;
     })
     .catch(erro => {
-        document.getElementById("transcricao-conteudo").innerText =
-            "Não foi possível carregar a transcrição.";
+        document.getElementById("transcricao-podcast-conteudo").innerText =
+            "Não foi possível carregar a transcrição do podcast.";
         console.error(erro);
     });
-const playerPodcast = document.getElementById("player-podcast");
+
+fetch("video/bolinho.txt")
+    .then(resposta => resposta.text())
+    .then(texto => {
+        document.getElementById("transcricao-video-conteudo").innerText = texto;
+    })
+    .catch(erro => {
+        document.getElementById("transcricao-video-conteudo").innerText =
+            "Não foi possível carregar a transcrição do documentário.";
+        console.error(erro);
+    });

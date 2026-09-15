@@ -201,23 +201,19 @@
                 <h2 id="video-titulo">Vozes que habitam a rua</h2>
             </div>
             <div class="video-player"><video controls preload="metadata" aria-describedby="video-descricao"><source src="video/video-bolinho.mp4" type="video/mp4"><track kind="captions" srclang="pt-BR" label="Português" src="video/video-bolinho.mp4" default>Seu navegador não suporta vídeo HTML5.</video>
-                <p id="video-descricao">Documentário · 06:14 · adicione o vídeo e o arquivo de legendas à pasta <code>media</code>.</p>
-            </div><button class="text-toggle" type="button" aria-expanded="false" aria-controls="transcricao-video" data-disclosure>Mostrar transcrição do documentário</button>
-            <article class="media-transcript" id="transcricao-video" hidden aria-labelledby="titulo-transcricao-video">
-                <h3 id="titulo-transcricao-video">Transcrição do documentário</h3>
-                <p><strong>Narradora:</strong> Belo Horizonte é feita de encontros. Entre o desenho modernista e a conversa na calçada, a cidade constrói sua própria linguagem.</p>
-                <p><strong>Voz da rua:</strong> A música chega primeiro. Ela chama, junta gente e transforma a passagem em permanência.</p>
-                <p><strong>Narradora:</strong> Nas cozinhas, nas praças e nas bibliotecas, a cultura ganha novas formas sem abandonar suas raízes.</p>
+            </div><button class="text-toggle" type="button" aria-expanded="false" aria-controls="transcricao-video-conteudo" data-disclosure>Mostrar transcrição do documentário</button>
+            <article class="media-transcript" id="transcricao-video-conteudo" hidden aria-labelledby="titulo-transcricao-video-conteudo">
+                <h3 id="titulo-transcricao-video-conteudo">Transcrição do podcast</h3>
+                <div id="transcricao-conteudo">
+                    Carregando transcrição...
+                </div>
             </article>
             <div class="metadata">
-                <p><b>Sinopse</b> Um olhar sobre os ritmos, trabalhos e afetos que tornam a rua também um palco cultural.</p>
-                <p><b>Ficha técnica</b> Direção e roteiro: equipe do projeto · 2026</p>
+                <p><b>Sinopse</b>“Vozes que habitam a rua” apresenta a história e o significado dos famosos bolinhos espalhados por Belo Horizonte, explorando sua presença na identidade afetiva e cultural da cidade. O documentário destaca um desses grafites localizado próximo à Faculdade de Letras da UFMG e mostra como seus elementos visuais, cores e caricaturas chamam a atenção de quem passa. A produção também aborda a relação entre a confeitaria e a arte urbana, mostrando como o cupcake, associado a um universo mais sofisticado, pode se unir ao grafite, uma manifestação artística popular, criando uma expressão que aproxima diferentes públicos e inspira outros artistas..</p>
             </div>
             <div class="module-credits">
                 <p class="eyebrow">Integrantes deste trabalho</p>
                 <p>Anna Loren</p>
-                <p>Andressa</p>
-                <p>Ana Clara</p>
                 <p>Gabriel Amâncio</p>
                 <p>Gabriel Moreira</p>
                 <p>Pedro Guilherme</p>
@@ -238,13 +234,15 @@
                     <p class="eyebrow">Episódio com Carlos Ernest Dias</p>
                     <h3>Entre o Erudito e o Popular</h3>
                     <p>Ouça o podcast na integra. Os primeiros 30 segundos são a música de introdução.</p><audio controls preload="metadata" aria-label="Podcast: A cidade servida à mesa"><source src="podcast/Coltecast_Entrevista.mp3" type="audio/mpeg">Seu navegador não suporta áudio HTML5.</audio></div>
-            </div><button class="text-toggle" type="button" aria-expanded="false" aria-controls="transcricao-podcast" data-disclosure>Mostrar transcrição do podcast</button>
-            <article class="media-transcript" id="transcricao-podcast" hidden aria-labelledby="titulo-transcricao-podcast">
-                <h3 id="titulo-transcricao-podcast">Transcrição do podcast</h3>
-                <div id="transcricao-conteudo">
-                    Carregando transcrição...
-                </div>
-            </article>
+            </div>
+        <button class="text-toggle" type="button" aria-expanded="false" aria-controls="transcricao-podcast" data-disclosure>Mostrar transcrição do podcast</button>
+                
+        <article class="media-transcript" id="transcricao-podcast" hidden aria-labelledby="titulo-transcricao-podcast">
+            <h3 id="titulo-transcricao-podcast">Transcrição do podcast</h3>
+            <div id="transcricao-podcast-conteudo">
+                Carregando transcrição...
+            </div>
+        </article>
             <ol class="episodes">
                 <li><button type="button" onclick="document.querySelector('audio').currentTime= 420;document.querySelector('audio').play();"><span>01</span> Arquitetura para todos <small>07:00</small></button></li>
                 <li><button type="button" onclick="document.querySelector('audio').currentTime=480;document.querySelector('audio').play();"><span>03</span> A cidade servida à mesa <small>08:00</small></button></li>
