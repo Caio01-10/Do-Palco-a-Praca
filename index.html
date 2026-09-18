@@ -224,7 +224,7 @@
             <div class="module-intro">
                 <p class="eyebrow">04 / Podcast</p>
                 <h2 id="podcast-titulo">Coltecast</h2>
-                <p>o podcast do COLTEC feito por quem experência o COLTEC.</p>
+                <p>O podcast do COLTEC feito por quem experência o COLTEC.</p>
             </div>
             <div class="podcast-player">
                 <div class="disc" aria-hidden="true">
@@ -233,25 +233,30 @@
                 <div>
                     <p class="eyebrow">Episódio com Carlos Ernest Dias</p>
                     <h3>Entre o Erudito e o Popular</h3>
-                    <p>Ouça o podcast na integra. Os primeiros 30 segundos são a música de introdução.</p><audio controls preload="metadata" aria-label="Podcast: A cidade servida à mesa"><source src="podcast/Coltecast_Entrevista.mp3" type="audio/mpeg">Seu navegador não suporta áudio HTML5.</audio></div>
-            </div>
-        <button class="text-toggle" type="button" aria-expanded="false" aria-controls="transcricao-podcast" data-disclosure>Mostrar transcrição do podcast</button>
-                
-        <article class="media-transcript" id="transcricao-podcast" hidden aria-labelledby="titulo-transcricao-podcast">
-            <h3 id="titulo-transcricao-podcast">Transcrição do podcast</h3>
-            <div id="transcricao-podcast-conteudo">
-                Carregando transcrição...
-            </div>
-        </article>
+                    <p>Ouça o podcast na integra. Os primeiros 30 segundos são a música de introdução.</p><audio id="coltecast-audio" controls preload="auto" aria-label="Podcast: A cidade servida à mesa"><source src="podcast/Coltecast_Entrevista.mp3" type="audio/mpeg">Seu navegador não suporta áudio HTML5.</audio></div>
+            </div><button class="text-toggle" type="button" aria-expanded="false" aria-controls="transcricao-podcast" data-disclosure>Mostrar transcrição do podcast</button>
+            <article class="media-transcript" id="transcricao-podcast" hidden aria-labelledby="titulo-transcricao-podcast">
+                <h3 id="titulo-transcricao-podcast">Transcrição do podcast</h3>
+                <div id="transcricao-conteudo">
+                    Carregando transcrição...
+                </div>    
+            </article>
+                <h3>Momentos de destaque do podcast</h3>
             <ol class="episodes">
-                <li><button type="button" onclick="document.querySelector('audio').currentTime= 420;document.querySelector('audio').play();"><span>01</span> Arquitetura para todos <small>07:00</small></button></li>
-                <li><button type="button" onclick="document.querySelector('audio').currentTime=480;document.querySelector('audio').play();"><span>03</span> A cidade servida à mesa <small>08:00</small></button></li>
-                <li><button type="button" onclick="document.querySelector('audio').currentTime=540;document.querySelector('audio').play();"><span>02</span> Rima, praça e resistência <small>09:00</small></button></li>
-            </ol>
+                <li><button type="button" data-time="430">A inspiração de Carlos para a orquestra <small>07:10</small></button></li>
+                <li><button type="button" data-time="1578">Existe música tecnicamente melhor que a outra? <small>26:18</small></button></li>
+                <li><button type="button" data-time="2728">Comparação erudito x popular entre o Brasil e o exterior <small>45:28</small></button></li>
+            </ol>           
+            
             <div class="module-credits">
                 <p class="eyebrow">Integrantes deste trabalho</p>
                 <p>
-                    Felipe de Jesus Castro<br> João Lucas Alves Lameirão<br> Miguel Augusto Silva Caetano<br> Pedro Vasconcelos Marcowicz<br> Samuel Vieira Bento Severo<br> Com participação especial de Carlos Ernest Dias
+                    Felipe de Jesus Castro<br>
+                    João Lucas Alves Lameirão<br>
+                    Miguel Augusto Silva Caetano<br>
+                    Pedro Vasconcelos Marcowicz<br>
+                    Samuel Vieira Bento Severo<br>
+                    Com participação especial de Carlos Ernest Dias
                 </p>
             </div>
         </section>
